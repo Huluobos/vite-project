@@ -2,7 +2,7 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import NProgress from 'nprogress' // progress bar
 import 'nprogress/css/nprogress.css' // 进度条样式
 
-import Layout from '@/components/layouts/index.vue' // 进度条样式
+import Layout from '@/layouts/index.vue' // 进度条样式
 
 NProgress.configure({ showSpinner: false }) // NProgress Configuration
 
@@ -15,14 +15,14 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'index',
         name: 'index',
-        component: () => import('../views/index.vue'),
+        component: () => import('../views/index/index.vue'),
       }
     ]
   },
   {
     path: '/test',
     name: 'Test',
-    component: () => import('../views/test.vue')
+    component: () => import('../views/error/test.vue')
   }
 ]
 

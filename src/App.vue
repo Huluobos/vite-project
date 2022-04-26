@@ -1,14 +1,12 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
- <div id="app">
-    <router-view/>
+  <div id="app">
+    <router-view />
   </div>
 </template>
 
-<style>
+<style scoped lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

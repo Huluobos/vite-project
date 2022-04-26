@@ -5,18 +5,17 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    BaseHeader: typeof import('./src/components/layouts/BaseHeader.vue')['default']
-    BaseSide: typeof import('./src/components/layouts/BaseSide.vue')['default']
     BasicButton: typeof import('./src/components/Button/src/BasicButton.vue')['default']
-    ElButton: typeof import('element-plus/es')['ElButton']
+    ElAside: typeof import('element-plus/es')['ElAside']
+    ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElFooter: typeof import('element-plus/es')['ElFooter']
+    ElHeader: typeof import('element-plus/es')['ElHeader']
     ElIcon: typeof import('element-plus/es')['ElIcon']
+    ElMain: typeof import('element-plus/es')['ElMain']
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
     ElMenuItemGroup: typeof import('element-plus/es')['ElMenuItemGroup']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    Layout: typeof import('./src/components/layouts/layout.vue')['default']
-    Layouts: typeof import('./src/components/layouts/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
