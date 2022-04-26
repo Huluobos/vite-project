@@ -1,21 +1,20 @@
 <script lang="ts">
-import { defineComponent } from "vue"
-import BaseHeader from "./BaseHeader.vue"
-import BaseSide from "./BaseSide.vue"
-import type { RouteLocation } from 'vue-router';
-export default defineComponent({
-  name: 'Layout',
-  components: { BaseHeader, BaseSide },
-  setup() {
+import { defineComponent } from "vue";
+import BaseHeader from "./BaseHeader.vue";
+import BaseSide from "./BaseSide.vue";
+import type { RouteLocation } from "vue-router";
 
-  }
+export default defineComponent({
+  name: "Layout",
+  components: { BaseHeader, BaseSide },
+  setup() {},
 });
 </script>
 
 <template>
   <div>
-        <el-container style="height: 500px; border: 1px solid #eee">
-       <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
+    <el-container style="height: 500px; border: 1px solid #eee">
+      <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
         <BaseSide></BaseSide>
       </el-aside>
       <el-container>
@@ -25,9 +24,7 @@ export default defineComponent({
         <el-main>
           <router-view />
         </el-main>
-        <el-footer>
-          111111111
-        </el-footer>
+        <el-footer> 111111111 </el-footer>
       </el-container>
     </el-container>
   </div>

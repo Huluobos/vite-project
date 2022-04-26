@@ -22,6 +22,7 @@ export default defineConfig({
             components: resolve('src/components'),
             views: resolve('src/views'),
             assets: resolve('src/assets'),
+            layouts: resolve('src/layouts'),
         },
     },
     // server: {

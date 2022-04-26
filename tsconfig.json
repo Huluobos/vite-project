@@ -14,9 +14,11 @@
     "baseUrl": ".",
     "types": ["element-plus/global"],
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"],
+      "components/*": ["src/components/*"],
+      "views/*": ["src/views/*"],
+      "assets/*": ["src/assets/*"],
+      "layouts/*": ["src/layouts/*"],
     },
     "lib": [
       "esnext",

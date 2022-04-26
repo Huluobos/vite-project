@@ -1,21 +1,17 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-    name: 'HomeView',
-    components: {
-    
-    },
-})
+  name: "HomeView",
+  components: {},
+});
 </script>
 
 <template>
-    <div>
-        test
+  <div>
+    test
 
-        <el-button type="warning" round>Warning</el-button>
-    </div>
+    <el-button type="warning" round>Warning</el-button>
+  </div>
 </template>
-<style scoped> 
-
-</style>
+<style scoped></style>
